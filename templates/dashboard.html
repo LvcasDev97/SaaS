@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard SaaS</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="/static/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>📊 Dashboard SaaS</h1>
+    </header>
+
+    <main>
+        <!-- Cards de estatísticas -->
+        <section id="cards">
+            <div class="card">
+                <h3>Total de Vendas</h3>
+                <p id="card-vendas">0</p>
+            </div>
+            <div class="card">
+                <h3>Produtos Cadastrados</h3>
+                <p id="card-produtos">0</p>
+            </div>
+            <div class="card">
+                <h3>Usuários Ativos</h3>
+                <p id="card-usuarios">0</p>
+            </div>
+        </section>
+
+        <!-- Gráfico -->
+        <section>
+            <h2>Produtos mais vendidos</h2>
+            <canvas id="grafico" width="600" height="300"></canvas>
+        </section>
+    </main>
+
+</body>
+</html>
